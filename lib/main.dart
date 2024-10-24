@@ -4,6 +4,7 @@ import 'package:notes_app/views/notes_view.dart';
 void main() {
   runApp(const NotesApp());
 }
+
 class NotesApp extends StatelessWidget {
   const NotesApp({super.key});
 
@@ -13,9 +14,10 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
+        fontFamily: 'Poppins',
         // scaffoldBackgroundColor: Colors.black,
       ),
-      home:const NotesView(),
+      home: const NotesView(),
     );
   }
 }
