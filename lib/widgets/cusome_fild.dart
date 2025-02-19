@@ -18,8 +18,9 @@ class CusomeFild extends StatelessWidget {
         validator: (value) {
           if (value?.isEmpty ?? true) {
             return 'Field is required';
+          } else {
+            return null;
           }
-          return null;
         },
         cursorColor: kprimaryColor,
         maxLines: maxLines,
@@ -30,6 +31,8 @@ class CusomeFild extends StatelessWidget {
           border: BuildBorder(),
           enabledBorder: BuildBorder(),
           focusedBorder: BuildBorder(kprimaryColor),
+          errorBorder: BuildBorder(Colors.red),
+          focusedErrorBorder: BuildBorder(Colors.red),
         ));
   }
 
